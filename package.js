@@ -13,12 +13,12 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.4.1.1');
   api.use('ecmascript');
-  api.mainModule('notifyjs.js');
+  api.mainModule('@notifyjs/dist/notify.js', 'client');
 });
 
-Package.onTest(function(api) {
+/*Package.onTest(function(api) {
   api.use('ecmascript');
   api.use('tinytest');
   api.use('rameshmurukesan:notifyjs');
   api.mainModule('notifyjs-tests.js');
-});
+});*/
